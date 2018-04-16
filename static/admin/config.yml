@@ -18,3 +18,13 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
+
+  - name: "skills"
+    label: "Skills"
+    folder: "src/pages/skills"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Keys", name: "templateKey", widget: "hidden", default: "skill-description"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
